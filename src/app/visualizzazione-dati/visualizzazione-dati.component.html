@@ -1,0 +1,18 @@
+
+<div *ngIf="cities">
+    <table>
+        <thead>
+            <tr>
+                <th>Proprietà2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let city of cities">
+                <td>{{city}}</td>                             
+            </tr>
+        </tbody>
+    </table>
+<input [(ngModel)]="newCity" placeholder="Inserisci una nuova stringa" />
+<button (click)="addCity(newCity)">Invia</button>
+
+</div>
